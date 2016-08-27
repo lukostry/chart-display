@@ -1,0 +1,16 @@
+.button-container {
+    margin: 75px 0px 0px 20px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1.5px $button_container_shadow_color;
+    @include sizing(140px, 30px);
+}
+
+button {
+    color: $button_font_color;
+    font-size: $smaller_font_size;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 1px $button_font_color;
+    @include sizing(136px, 26px);
+    @include linear_gradient($button_background_color, $button_gradient_middle, $button_gradient_bottom);
+}

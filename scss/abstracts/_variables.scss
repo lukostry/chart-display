@@ -1,0 +1,37 @@
+$font_stack: ("open_sansregular", Verdana, Arial, sans-serif);
+
+//defining colors
+
+$font_main_color: #05415b;
+$lighter_font_color: #2f6ca6;
+$main_border_color: #80b3d5;
+$icon_container_border_color: #cccccc;
+$outer_icon_container_background_color: #ffffff;
+
+$icon_container_background_color: #eff8fc;
+$icon_container_gradient_middle: #e8f5fc;
+$icon_container_gradient_bottom: #def0fb;
+$icon_container_shadow_color: #888;
+
+$button_font_color: #ffffff;
+$button_container_shadow_color: #bfbfbf;
+$button_background_color: #1bb6e1;
+$button_gradient_middle: #1094b8;
+$button_gradient_bottom: #067493;
+
+$download_icon_background_color: #05415b;
+$chart_header_background_color: #daeefb;
+
+$sup_dollar_font_color: #2f6ca6;
+
+$main_font_size: 1.2rem;
+$dollar_font_size: 20px;
+$sup_dollar_font_size: 16px;
+$figure_font_size: 28px;
+$smaller_font_size: 12px;
+$bolder_font: 700;
+
+$chart_header_height: 30px;
+
+$standard_border: (1px solid $main_border_color);
+$icon_container_border: (1px solid $icon_container_border_color);

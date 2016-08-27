@@ -1,0 +1,21 @@
+.chart-figure-container {
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.figure {
+    font-size: $figure_font_size;
+    font-weight: $bolder_font;
+    text-align: right;
+}
+
+.figure-description {
+    font-size: $smaller_font_size;
+    margin-top: 10px;
+    text-align: right;
+}
+
+sup {
+    color: $sup_dollar_font_color;
+    font-size: $sup_dollar_font_size;
+}

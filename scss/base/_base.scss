@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $font_main_color;
+    font-family: $font_stack;
+}
+
+.chart-container {
+    border: $standard_border;
+    margin: 20px auto;
+    position: relative;
+    @include sizing(760px, 230px);
+}
+
+.chart-header {
+    @include sizing(100%, $chart_header_height);
+    border-bottom: $standard_border;
+    background-color: $chart_header_background_color;
+}
+
+.icon-outer-container {
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    border: $icon_container_border;
+    background-color: $outer_icon_container_background_color;
+    border-radius: 5px;
+    @include sizing(40px, 40px);
+}
+
+.icon-inner-container {
+    margin: 4px;
+    border-radius: 5px;
+    border: $icon_container_border;
+    box-shadow: 0px 0px 0.5px $icon_container_shadow_color;
+    background-color: $icon_container_background_color;
+    padding: 4px 7px;
+    @include linear_gradient($icon_container_background_color, $icon_container_gradient_middle, $icon_container_gradient_bottom);
+    @include sizing(30px, 30px);
+}
+.usd-icon {
+    display: block;
+    font-size: $dollar_font_size;
+    font-weight: $bolder_font;
+}
+
+h5 {
+    font-weight: $bolder_font;
+    font-size: $main_font_size;
+    margin-left: 70px;
+    height: 100%;
+    line-height: $chart_header_height;
+}
+
+.icon-downoload-background {
+    background-color: $download_icon_background_color;
+    @include sizing(15px, 20px);
+    &::after {
+        top: 14px;
+        left: 17px;
+        @include pseudoElements;
+        @include sizing(4px, 8px);
+    }
+    &::before {
+        top: 21px;
+        left: 14px;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $icon_container_background_color;
+    }
+}
+
+.chart-summary {
+    margin-left: 520px;
+}

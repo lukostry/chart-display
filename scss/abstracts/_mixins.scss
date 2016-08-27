@@ -1,0 +1,21 @@
+@mixin sizing($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@mixin linear_gradient($top_color, $middle_color, $bottom_color) {
+    background: -moz-linear-gradient(top, $top_color 0%, $middle_color 50%, $bottom_color 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $top_color), color-stop(50%, $middle_color), color-stop(100%, $bottom_color));
+    background: -webkit-linear-gradient(top, $top_color 0%, $middle_color 50%, $bottom_color 100%);
+    background: -o-linear-gradient(top, $top_color 0%, $middle_color 50%, $bottom_color 100%);
+    background: -ms-linear-gradient(top, $top_color 0%, $middle_color 50%, $bottom_color 100%);
+    background: linear-gradient(to bottom, $top_color 0%, $middle_color 50%, $bottom_color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top_color', endColorstr='$bottom_color', GradientType=0 );
+}
+
+@mixin pseudoElements {
+  content: "";
+  // display: inline-block;
+  position: absolute;
+  background-color: $icon_container_background_color;
+}
