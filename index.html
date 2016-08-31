@@ -6,10 +6,12 @@
     <title>Charts display</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/chartOptions.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         //declaring dependecies
         var app = MY_APP;
+        var config = CHART_OPTIONS;
 
         google.charts.load('current', {packages: ['corechart']});
         google.charts.setOnLoadCallback(drawColChart);
@@ -22,36 +24,7 @@
             // Create the data table.
             var data = google.visualization.arrayToDataTable(app.dataToColumnChart, false);
 
-            var options = {
-                title: 'Installations per day',
-                colors: ["#ed6e37", "#259e01", "#15a0c8"],
-                vAxis: {
-                    gridlines: {
-                        count: 3
-                    },
-                    textStyle: {
-                        color: "#05415b",
-                        fontName: "open_sansregular",
-                        fontSize: 12,
-                        bold: false,
-                        italic: false
-                    }
-                },
-                legend: { position: 'bottom' },
-                chartArea: {
-                    width: "85%",
-                    height: "65%"
-                },
-                hAxis: {
-                    textStyle: {
-                        color: "#05415b",
-                        fontName: "open_sansregular",
-                        fontSize: 12,
-                        bold: false,
-                        italic: false
-                    }
-                }
-            };
+            var options = config.colChartOptions;
 
             var chart = new google.visualization.ColumnChart(document.getElementById("chart-column"));
 
@@ -62,37 +35,7 @@
           // Create the data table.
           var data = google.visualization.arrayToDataTable(app.dataToLineChart, false);
 
-          var options = {
-              title: "Revenue per week",
-              colors: ["#ed6e37", "#259e01", "#15a0c8"],
-              vAxis: {
-                  gridlines: {
-                      count: 3
-                  },
-                  textStyle: {
-                      color: "#05415b",
-                      fontName: "open_sansregular",
-                      fontSize: 12,
-                      bold: false,
-                      italic: false
-                  }
-              },
-              legend: { position: 'bottom' },
-              pointSize: 7,
-              chartArea: {
-                  width: "85%",
-                  height: "65%"
-              },
-              hAxis: {
-                  textStyle: {
-                      color: "#05415b",
-                      fontName: "open_sansregular",
-                      fontSize: 12,
-                      bold: false,
-                      italic: false
-                  }
-              }
-          };
+          var options = config.lineChartOptions;
 
           var chart = new google.visualization.LineChart(document.getElementById("chart-line"));
 

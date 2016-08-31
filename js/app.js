@@ -12,8 +12,9 @@ MY_APP = (function() {
         if(xhr.status === 200) {
             responseObject = JSON.parse(xhr.responseText);
 
-            console.log(responseObject.data[0]);
+            // console.log(responseObject.data[0]);
 
+            //iterate over data, create two variables to populate arrays with data for both charts (variables: dataRowColChart & dataRowLineChart)
             for (var i=0, dataRowColChart=[], dataRowLineChart=[]; i<responseObject.data.length; i++) {
                 dataRowColChart.push(responseObject.data[i]["week"]);
                 dataRowLineChart.push(responseObject.data[i]["week"]);
@@ -27,10 +28,11 @@ MY_APP = (function() {
                 }
                 dataToLineChart.push(dataRowLineChart);
 
+                // reset both arrays after each iteration
                 dataRowLineChart = [];
                 dataRowColChart = [];
             }
-            console.log(dataToLineChart);
+            // console.log(dataToLineChart);
         }
     };
 
