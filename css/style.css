@@ -177,24 +177,24 @@ h5 {
 .icon-downoload-background::after {
   top: 14px;
   left: 17px;
+  background-color: #eff8fc;
   content: "";
   position: absolute;
-  background-color: #eff8fc;
   width: 4px;
   height: 8px;
 }
 
-/* line 66, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
+/* line 67, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
 .icon-downoload-background::before {
   top: 21px;
   left: 14px;
-  content: "";
-  position: absolute;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #eff8fc;
+  content: "";
+  position: absolute;
 }
 
 /* line 78, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
@@ -202,14 +202,17 @@ h5 {
   display: inline-block;
   vertical-align: top;
   width: 75%;
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
 }
 
-/* line 83, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
+/* line 84, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
 .chart-summary {
+  padding-right: 45px;
   display: inline-block;
   vertical-align: top;
   width: 24%;
-  padding-right: 45px;
 }
 
 /* line 1, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_buttons.scss */

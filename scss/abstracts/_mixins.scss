@@ -13,8 +13,13 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top_color', endColorstr='$bottom_color', GradientType=0 );
 }
 
-@mixin pseudoElements {
+@mixin pseudo_elements {
   content: "";
   position: absolute;
-  background-color: $icon_container_background_color;
+}
+
+@mixin inline_block($width) {
+    display: inline-block;
+    vertical-align: top;
+    width: $width;
 }

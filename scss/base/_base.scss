@@ -60,30 +60,29 @@ h5 {
     &::after {
         top: 14px;
         left: 17px;
-        @include pseudoElements;
+        background-color: $icon_container_background_color;
+        @include pseudo_elements;
         @include sizing(4px, 8px);
     }
     &::before {
         top: 21px;
         left: 14px;
-        content: "";
-        position: absolute;
         width: 0;
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-top: 5px solid $icon_container_background_color;
+        @include pseudo_elements;
     }
 }
 .chart-display {
     display: inline-block;
     vertical-align: top;
     width: 75%;
+    @include inline_block(75%);
 }
 .chart-summary {
-    display: inline-block;
-    vertical-align: top;
-    width: 24%;
     padding-right: 45px;
+    @include inline_block(24%);
     // margin-left: 520px;
 }
