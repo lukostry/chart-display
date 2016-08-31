@@ -15,7 +15,6 @@
 
 @mixin pseudoElements {
   content: "";
-  // display: inline-block;
   position: absolute;
   background-color: $icon_container_background_color;
 }

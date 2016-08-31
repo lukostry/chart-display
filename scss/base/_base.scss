@@ -15,9 +15,9 @@ body {
 }
 
 .chart-header {
-    @include sizing(100%, $chart_header_height);
     border-bottom: $standard_border;
     background-color: $chart_header_background_color;
+    @include sizing(100%, $chart_header_height);
 }
 
 .icon-outer-container {
