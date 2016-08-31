@@ -3644,10 +3644,10 @@ body {
 /* line 10, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
 .chart-container {
   border: 1px solid #80b3d5;
-  margin: 20px auto;
+  margin: 25px auto;
   position: relative;
-  width: 760px;
-  height: 230px;
+  width: 780px;
+  height: 275px;
 }
 
 /* line 17, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
@@ -3736,14 +3736,24 @@ h5 {
   border-top: 5px solid #eff8fc;
 }
 
-/* line 79, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
+/* line 78, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
+.chart-display {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+/* line 83, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/base/_base.scss */
 .chart-summary {
-  margin-left: 520px;
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  padding-right: 45px;
 }
 
 /* line 1, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_buttons.scss */
 .button-container {
-  margin: 75px 0px 0px 20px;
+  margin: 105px 0px 0px 20px;
   padding: 2px;
   border-radius: 5px;
   box-shadow: 0px 3px 1.5px #bfbfbf;
@@ -3754,7 +3764,7 @@ h5 {
 /* line 9, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_buttons.scss */
 button {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
   box-shadow: inset 0px 2px 1px #ffffff;
   width: 136px;
@@ -3771,24 +3781,23 @@ button {
 /* line 1, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
 .chart-figure-container {
   margin-top: 30px;
-  padding-right: 20px;
 }
 
-/* line 6, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
+/* line 5, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
 .figure {
   font-size: 28px;
   font-weight: 700;
   text-align: right;
 }
 
-/* line 12, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
+/* line 11, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
 .figure-description {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 10px;
   text-align: right;
 }
 
-/* line 18, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
+/* line 17, C:/Users/Komp Ostrego/Desktop/Coders_lab/charts_display/scss/components/_chart_summary.scss */
 sup {
   color: #2f6ca6;
   font-size: 16px;

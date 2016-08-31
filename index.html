@@ -5,6 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts display</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        //declaring dependecies
+        var app = MY_APP;
+
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawColChart);
+        google.charts.setOnLoadCallback(drawLineChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawColChart() {
+            // Create the data table.
+            var data = google.visualization.arrayToDataTable(app.dataToColumnChart, false);
+
+            var options = {
+                title: 'Installations per day',
+                colors: ["#ed6e37", "#259e01", "#15a0c8"],
+                vAxis: {
+                    gridlines: {
+                        count: 3
+                    },
+                    textStyle: {
+                        color: "#05415b",
+                        fontName: "open_sansregular",
+                        fontSize: 12,
+                        bold: false,
+                        italic: false
+                    }
+                },
+                legend: { position: 'bottom' },
+                chartArea: {
+                    width: "85%",
+                    height: "65%"
+                },
+                hAxis: {
+                    textStyle: {
+                        color: "#05415b",
+                        fontName: "open_sansregular",
+                        fontSize: 12,
+                        bold: false,
+                        italic: false
+                    }
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("chart-column"));
+
+            chart.draw(data, options);
+      }
+
+      function drawLineChart() {
+          // Create the data table.
+          var data = google.visualization.arrayToDataTable(app.dataToLineChart, false);
+
+          var options = {
+              title: "Revenue per week",
+              colors: ["#ed6e37", "#259e01", "#15a0c8"],
+              vAxis: {
+                  gridlines: {
+                      count: 3
+                  },
+                  textStyle: {
+                      color: "#05415b",
+                      fontName: "open_sansregular",
+                      fontSize: 12,
+                      bold: false,
+                      italic: false
+                  }
+              },
+              legend: { position: 'bottom' },
+              pointSize: 7,
+              chartArea: {
+                  width: "85%",
+                  height: "65%"
+              },
+              hAxis: {
+                  textStyle: {
+                      color: "#05415b",
+                      fontName: "open_sansregular",
+                      fontSize: 12,
+                      bold: false,
+                      italic: false
+                  }
+              }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById("chart-line"));
+
+          chart.draw(data, options);
+    }
+    </script>
+
 </head>
 <body>
     <section class="chart-container">
@@ -18,7 +113,9 @@
 	        <h5>Revenue by Solution</h5>
 		</div>
         <div class="chart-body">
-            <div class="chart-display"></div>
+            <div class="chart-display">
+                <div id="chart-line" style="width: 600px; height: 230px;"></div>
+            </div>
             <div class="chart-summary">
                 <div class="chart-figure-container">
                     <div class="figure"><sup>&dollar;</sup>32,556</div>
@@ -41,7 +138,9 @@
 	        <h5>Installations</h5>
 		</div>
         <div class="chart-body">
-            <div class="chart-display"></div>
+            <div class="chart-display">
+                <div id="chart-column" style="width: 600px; height: 230px;"></div>
+            </div>
             <div class="chart-summary">
                 <div class="chart-figure-container">
                     <div class="figure">136</div>

@@ -9,9 +9,9 @@ body {
 
 .chart-container {
     border: $standard_border;
-    margin: 20px auto;
+    margin: 25px auto;
     position: relative;
-    @include sizing(760px, 230px);
+    @include sizing(780px, 275px);
 }
 
 .chart-header {
@@ -75,7 +75,15 @@ h5 {
         border-top: 5px solid $icon_container_background_color;
     }
 }
-
+.chart-display {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+}
 .chart-summary {
-    margin-left: 520px;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    padding-right: 45px;
+    // margin-left: 520px;
 }

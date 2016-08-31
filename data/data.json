@@ -1,0 +1,9 @@
+{
+    "data": [
+        {"week": "week 48", "Net Comp": 6, "AnalyzerHR": 4, "Question Right": 3},
+        {"week": "week 49", "Net Comp": 7, "AnalyzerHR": 3, "Question Right": 1},
+        {"week": "week 50", "Net Comp": 8, "AnalyzerHR": 5, "Question Right": 3},
+        {"week": "week 51", "Net Comp": 9, "AnalyzerHR": 8, "Question Right": 3},
+        {"week": "week 52", "Net Comp": 3, "AnalyzerHR": 2, "Question Right": 1}
+    ]
+}
