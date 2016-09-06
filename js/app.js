@@ -10,7 +10,7 @@ MY_APP = (function() {
     xhr.onload = function() {
 
         if(xhr.status === 200) {
-            responseObject = JSON.parse(xhr.responseText);
+            var responseObject = JSON.parse(xhr.responseText);
 
             // console.log(responseObject.data[0]);
 
